@@ -45,6 +45,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func stpMoneyBetAction(sender: UIStepper) {
+    }
+    
+    @IBAction func segDifficultyLevelACTION(sender: UISegmentedControl) {
         
         if segDifficultyLevel.selectedSegmentIndex == 0 {
             diceTypeComputer = 6
@@ -60,6 +63,23 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func btnRollDice(sender: UIButton) {
+        
+        var playerRoll = arc4random_uniform(6)
+        var computerRoll = arc4random_uniform(UInt32(diceTypeComputer))
+        
+        if playerRoll == 0 {
+            playerRoll = 1
+        }
+
+        if computerRoll == 0 {
+            computerRoll = 1
+        }
+        
+        dicePlayer = Int(playerRoll)
+        diceComputer = Int(computerRoll)
+        
+        lblDicePlayer.text = String(playerRoll)
+        lblDiceComputer.text = String(computerRoll)
     }
    
 }

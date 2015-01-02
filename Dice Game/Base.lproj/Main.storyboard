@@ -109,7 +109,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="18" y="498" width="286" height="41"/>
+                                    <rect key="frame" x="18" y="498" width="286" height="50"/>
                                 </variation>
                                 <connections>
                                     <action selector="btnRollDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V8g-bf-NHt"/>
@@ -136,8 +136,7 @@
                                     <rect key="frame" x="16" y="452" width="291" height="29"/>
                                 </variation>
                                 <connections>
-                                    <action selector="segDifficultyLevelACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ram-f9-bF2"/>
-                                    <action selector="segDificultyLevelACTION:" destination="BYZ-38-t0r" eventType="valueChanged" id="8iL-kS-2pi"/>
+                                    <action selector="segDifficultyLevelACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="00k-Hr-pgM"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONEY WON / LOST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXj-yD-kkb">
@@ -146,7 +145,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="19" y="291" width="282" height="42"/>
+                                    <rect key="frame" x="19" y="290" width="282" height="42"/>
                                 </variation>
                             </label>
                         </subviews>
